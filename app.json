@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Velox",
+    "slug": "Velox",
+    "version": "2.5.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "backgroundColor": "#ffffff",
+      "image": "./assets/splash.png"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.ricksousa.APP0A100",
+      "versionCode": 22,
+      "jsEngine": "hermes",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"],
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-1269207393202968~2332431283"
+      }
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    },
+    "description": ""
+  }
+}
