@@ -14,7 +14,7 @@ import {
   Label,
   AdviceContainer,
 } from './style';
-import { AdBanner } from '../../global';
+// import { AdBanner } from '../../global';
 import { translate } from '../../locales';
 
 export default function History() {
@@ -32,7 +32,7 @@ export default function History() {
     }, [change])
   );
 
-  const handleTrash = async (index) => {
+  const handleTrash = async index => {
     data.splice(index, 1);
     const newData = JSON.stringify(data);
     await AsyncStorage.setItem('@runs', newData);
@@ -43,7 +43,7 @@ export default function History() {
     return (
       <AdviceContainer>
         <Advice>{translate('historic')}</Advice>
-        <AdBanner />
+        {/* <AdBanner /> */}
       </AdviceContainer>
     );
   }
@@ -52,7 +52,7 @@ export default function History() {
       <Container>
         <SwipeListView
           data={data}
-          renderItem={(item) => (
+          renderItem={item => (
             <Content key={item.item.date}>
               <TextContainer>
                 <Label>0 - 100:</Label>
@@ -67,13 +67,13 @@ export default function History() {
               <Date>{moment(item.item.date).fromNow()}</Date>
             </Content>
           )}
-          renderHiddenItem={(item) => (
+          renderHiddenItem={item => (
             <RowHiddenButton onPress={() => handleTrash(item.index)} />
           )}
           leftOpenValue={75}
         />
       </Container>
-      <AdBanner />
+      {/* <AdBanner /> */}
     </>
   );
 }

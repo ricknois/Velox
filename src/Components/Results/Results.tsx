@@ -5,7 +5,7 @@ import React, { useContext } from 'react';
 import { ToastAndroid } from 'react-native';
 import storeContext from '../../Context/context';
 import { theme } from '../../global';
-import adInterstitial from '../../global/AdInterstitials';
+// import adInterstitial from '../../global/AdInterstitials';
 import handleReview from '../../global/Review';
 import { translate } from '../../locales';
 import {
@@ -48,7 +48,7 @@ export default function Results() {
       '@runs',
       JSON.stringify([...arrayValue, newValue])
     );
-    return adInterstitial();
+    // return adInterstitial();
   };
 
   return (

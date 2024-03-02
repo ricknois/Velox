@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import * as Location from 'expo-location';
-import { AdBanner } from '../../global';
+// import { AdBanner } from '../../global';
 import { Container, SubContainer } from './style';
 import {
   Timer,
@@ -44,7 +44,7 @@ export default function Home() {
       <SubContainer>
         <Results />
       </SubContainer>
-      <AdBanner />
+      {/* <AdBanner /> */}
     </Container>
   );
 }

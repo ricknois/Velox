@@ -18,15 +18,15 @@ export default function RejectedPermissions({
   service,
   handlePermission,
 }) {
-  const pkg = Constants.manifest.releaseChannel
-    ? Constants.manifest.android.package
-    : 'host.exp.exponent';
+  // const pkg = Constants.expo.releaseChannel
+  //   ? Constants.manifest.android.package
+  //   : 'host.exp.exponent';
 
   const handleOpenSettings = async () => {
-    IntentLauncher.startActivityAsync(
-      IntentLauncher.ACTION_APPLICATION_DETAILS_SETTINGS,
-      { data: `package:${pkg}` }
-    );
+    // IntentLauncher.startActivityAsync(
+    //   IntentLauncher.ACTION_APPLICATION_DETAILS_SETTINGS,
+    //   { data: `package:${pkg}` }
+    // );
     handlePermission();
   };
 
